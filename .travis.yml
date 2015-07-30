@@ -3,7 +3,7 @@ before_install:
 - bundle install
 - rm -rf $(HOME)/Library/Developer/Xcode/DerivedData/*
 - sudo gem install xcode-install
-- echo $XCODE_INSTALL_USER
+- sudo -E echo $XCODE_INSTALL_USER
 - sudo XCODE_INSTALL_USER=$XCODE_INSTALL_USER XCODE_INSTALL_PASSWORD=$XCODE_INSTALL_PASSWORD xcode-install install '7.0 beta 4'
 - sudo xcode-select -s /Applications/Xcode-7.app
 script: make test
