@@ -3,7 +3,7 @@ before_install:
 - bundle install
 - rm -rf $(HOME)/Library/Developer/Xcode/DerivedData/*
 - xcode-install list
-- xcode-install install '7 beta 4'
+- xcode-install install '7 beta 4' --no-progress
 script: make test
 notifications:
   slack:
