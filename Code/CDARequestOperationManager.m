@@ -171,8 +171,8 @@
         self.responseSerializer = [[CDAResponseSerializer alloc] initWithClient:client];
         self.rateLimiting = configuration.rateLimiting;
 
-        if (configuration.userAgent) {
-            [(CDARequestSerializer*)self.requestSerializer setUserAgent:configuration.userAgent];
+        if (configuration.httpUserAgent) {
+            [(CDARequestSerializer*)self.requestSerializer setRequestUserAgent:configuration.httpUserAgent];
         }
         
         self.dateFormatter = [NSDateFormatter new];

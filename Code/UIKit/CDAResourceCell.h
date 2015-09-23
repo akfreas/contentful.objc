@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 /** @name Specifying Content */
 
 /** URL of an image which should be displayed in the `imageView` of this cell. */
-@property (nonatomic) NSURL* imageURL;
+@property (nonatomic) NSURL* imageViewImageURL;
 
 @end
 

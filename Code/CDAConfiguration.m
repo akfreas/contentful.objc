@@ -18,7 +18,7 @@
 
 @implementation CDAConfiguration
 
-+(instancetype)defaultConfiguration {
++(instancetype)defaultCDAConfiguration {
     CDAConfiguration* configuration = [CDAConfiguration new];
     configuration.previewMode = NO;
     configuration.rateLimiting = NO;

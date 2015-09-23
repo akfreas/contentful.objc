@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @return A configuration initialized with default parameters.
  */
-+(instancetype)defaultConfiguration;
++(instancetype)defaultCDAConfiguration;
 
 /** @name Configuring parameters */
 
@@ -38,7 +38,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) NSString* server;
 
 /** Configure a custom user-agent to be used in the HTTP request headers */
-@property (nonatomic) NSString* userAgent;
+@property (nonatomic) NSString* httpUserAgent;
 
 /** @name Configure Preview Mode */
 

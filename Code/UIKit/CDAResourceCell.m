@@ -35,12 +35,12 @@
     self.imageView.frame = self.bounds;
 }
 
--(void)setImageURL:(NSURL *)imageURL {
-    if (_imageURL == imageURL) {
+-(void)setImageViewImageURL:(NSURL *)imageURL {
+    if (_imageViewImageURL == imageURL) {
         return;
     }
     
-    _imageURL = imageURL;
+    _imageViewImageURL = imageURL;
     
     [self.imageView setImageWithURL:imageURL];
 }

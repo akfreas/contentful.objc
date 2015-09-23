@@ -18,17 +18,17 @@
     if (self) {
         [self setValue:[@"Bearer " stringByAppendingString:accessToken] forHTTPHeaderField:@"Authorization"];
 
-        self.userAgent = @"contentful.objc/1.8.1";
+        self.requestUserAgent = @"contentful.objc/1.8.1";
     }
     return self;
 }
 
--(void)setUserAgent:(NSString *)userAgent {
-    if (_userAgent == userAgent) {
+-(void)setRequestUserAgent:(NSString *)userAgent {
+    if (_requestUserAgent == userAgent) {
         return;
     }
 
-    _userAgent = userAgent;
+    _requestUserAgent = userAgent;
 
     NSString* userAgentHeader = self.HTTPRequestHeaders[@"User-Agent"];
     userAgentHeader = [userAgentHeader stringByReplacingOccurrencesOfString:@"(null)" withString:@""];
